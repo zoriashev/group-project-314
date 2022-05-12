@@ -13,7 +13,14 @@
 
     @media screen and (max-width:767px) {
         background-image:linear-gradient((rgba(17, 21, 24, 0.7)),rgba(17, 21, 24, 0.7)),
-        url("../images/footer-img/footer-mobile.jpg");    
+        url("../images/footer-img/footer-mobile.jpg"); 
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image:linear-gradient((rgba(17, 21, 24, 0.7)),rgba(17, 21, 24, 0.7)),
+        url("../images/footer-img/footer-mobile@2x.jpg"); 
+        }  
     }
 }
 .orange-text{
@@ -88,7 +95,7 @@
 }
 
 .logo-footer{
-    width: 80px;
+    /* width: 80px; */
     margin-bottom: 20px;
 }
 .img-instagram{
@@ -97,14 +104,19 @@
 .number-footer{
     display: flex;
     align-items: center;
-    height: 17px;
     font-weight: 600;
+    font-size: 12px;
     line-height: 17px;
-    letter-spacing: 0.08em;
     margin-bottom: 20px;
 
     color: #111518;
+
+    @media screen and (min-width:320px) {
+        letter-spacing: 0.08em;
+        font-size: 14px;  
+    }
 }
+
 .svg-footer{
     margin-right: 8px;
 }
