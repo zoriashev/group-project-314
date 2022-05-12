@@ -52,7 +52,12 @@
 
     &::placeholder {
         color: #FFFFFF;
+        background: inherit;
+    }
 
+    &:valid {
+        border: 1px solid rgb(255, 0, 0,1);
+        background: inherit;
     }
 
 }
@@ -68,4 +73,30 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.footer {
+    padding: 40px 60px;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo-footer{
+    width: 80px;
+    margin-bottom: 20px;
+}
+.img-instagram{
+    width: 40px;
+}
+.number-footer{
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+
+    color: #111518;
 }
