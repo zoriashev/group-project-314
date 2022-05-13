@@ -1,17 +1,14 @@
-//0px-767px
-@media screen and (max-width: 767px), (min-width: 768px) {
+//0px-480px
+@media screen and (max-width: 479px), (min-width: 480px) {
   .reviews {
     display: block;
     padding: 40px 0;
   }
   .container {
-    display: flex;
     width: 100%;
     justify-content: space-around;
   }
-  .container-reviews {
-    width: 1088px;
-  }
+
   .our-reviews {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -42,6 +39,7 @@
   .user-feedback {
     margin-bottom: 40px;
   }
+
   .user-name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -80,7 +78,6 @@
     line-height: calc(20 / 12);
     text-align: center;
     color: #ff6b09;
-    padding: 0 40px;
     margin-bottom: 16px;
     text-decoration: underline;
   }
@@ -100,6 +97,14 @@
   .arrow-right {
     margin-left: 16px;
   }
+  //480-1679px
+  @media screen and (min-width: 480px) {
+    .about-user {
+      width: 480px;
+      margin: auto;
+    }
+  }
+
   .our-guarantee_item {
     padding-bottom: 20px;
     &:last-child {
