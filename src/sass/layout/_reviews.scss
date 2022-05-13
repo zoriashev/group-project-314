@@ -1,0 +1,165 @@
+//0px-767px
+@media screen and (max-width: 767px), (min-width: 768px) {
+  .reviews {
+    display: block;
+    padding: 40px 0;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .container-reviews {
+    width: 1088px;
+  }
+  .our-reviews {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: calc(26 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #111518;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  .user {
+    margin-bottom: 30px;
+  }
+  .user_foto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .user-img {
+    width: 90px;
+    height: 90px;
+  }
+  .user_link {
+    display: flex;
+    justify-content: center;
+  }
+  .user-feedback {
+    margin-bottom: 40px;
+  }
+  .user-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #ff6b09;
+    margin-bottom: 16px;
+  }
+  .user-education {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #b9b9b9;
+    padding: 0 40px;
+    margin-bottom: 16px;
+  }
+  .article_normal-color {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: center;
+    color: #3d3d3d;
+    padding: 0 40px;
+    margin-bottom: 16px;
+  }
+  .article_orange-color {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: center;
+    color: #ff6b09;
+    padding: 0 40px;
+    margin-bottom: 16px;
+    text-decoration: underline;
+  }
+  .user-feedback-slider {
+    display: flex;
+    justify-content: center;
+  }
+  .user-img-slider {
+    width: 54px;
+    height: 54px;
+    margin: 0 6px;
+  }
+
+  .our-guarantee_item {
+    padding-bottom: 20px;
+    &:last-child {
+      padding-bottom: 0px;
+      border-left: none;
+    }
+    border-left: 1px dashed #b9b9b9;
+    /*&::before {
+      content: url(../images/fire-mob-tab.svg);
+      position: absolute;
+      margin-left: -7px;
+    }*/
+  }
+  .our-guarantee_item__legend {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: left;
+    color: #3d3d3d;
+    padding-left: 28px;
+  }
+
+  .legend-orange {
+    color: #ff6b09;
+  }
+}
+//768-1679px
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 32px 58px;
+  }
+  .container-guarantee {
+    width: 704px;
+  }
+  .our-guarantee {
+    font-size: 26px;
+    line-height: calc(34 / 26);
+  }
+
+  .our-guarantee_item__legend {
+    font-size: 12px;
+    padding-left: 32px;
+  }
+}
+//1680px
+@media screen and (min-width: 1680px) {
+  .container {
+    padding: 60px 0;
+  }
+  .container-guarantee {
+    width: 1088px;
+  }
+  .our-guarantee {
+    font-size: 46px;
+    line-height: calc(60 / 46);
+  }
+  /*.our-guarantee_item {
+    &::before {
+      content: url(../images/fire.svg);
+      margin-left: -10px;
+    }
+  }*/
+  .our-guarantee_item__legend {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    padding-left: 41px;
+  }
+}
