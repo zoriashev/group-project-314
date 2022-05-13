@@ -187,13 +187,18 @@
 .logo-footer{
     @media screen and (max-width:767px) {
         margin-bottom: 20px;
+        width: 80px;
+        height: 29px;
     }
     @media screen and (min-width:768px) {
         margin-right: auto;
+        width: 128px;
+        height: 45px;
     }
 }
-.img-instagram{
-    width: 40px;
+.img-instagram {   
+     width: 40px;
+     cursor: pointer;
     @media screen and (min-width:1680px){
         margin-right: 596px;
     }
