@@ -25,6 +25,7 @@
 
     @media screen and (min-width:768px) {
         max-width: 768px;
+        height: 459px;
         padding: 40px;
         background-image:linear-gradient((rgba(17, 21, 24, 0.7)),rgba(17, 21, 24, 0.7)),
         url("../images/footer-img/footer-tablet.jpg"); 
@@ -34,8 +35,22 @@
         screen and (min-resolution: 2dppx) {
             background-image:linear-gradient((rgba(17, 21, 24, 0.7)),rgba(17, 21, 24, 0.7)),
         url("../images/footer-img/footer-tablet@2x.jpg");   
+        }
     }
-  }
+    @media screen and (min-width:1680px) {
+        max-width: 1680px;
+        height: 794px;
+        padding: 80px 295px;
+        background-image:linear-gradient((rgba(17, 21, 24, 0.7)),rgba(17, 21, 24, 0.7)),
+        url("../images/footer-img/footer-desktop.jpg"); 
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image:linear-gradient((rgba(17, 21, 24, 0.7)),rgba(17, 21, 24, 0.7)),
+        url("../images/footer-img/footer-desktop@2x.jpg");
+         }
+    }
 }
 .orange-text{
     color: #FF6B09;
@@ -48,7 +63,11 @@
     margin-bottom: 24px;
 
     @media screen and (min-width:768px) {
-    font-size: 26px;  
+    font-size: 26px;
+    margin-bottom: 40px;  
+    }
+    @media screen and (min-width:1680px){
+    font-size: 46px;
     }
 }
 
@@ -61,6 +80,9 @@
     @media screen and (min-width:768px) {
     font-size: 14px;   
     }
+    @media screen and (min-width:1680px){
+    font-size: 30px;
+    }
 
 }
 .form-footer{
@@ -71,6 +93,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 24px;
         
     }
 }
@@ -80,7 +103,7 @@
     height: 48px;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     color: #FFFFFF;
     padding-left: 28px;
     border: 1px solid rgba(255, 255, 255, 1);
@@ -104,13 +127,18 @@
         max-width: 336px;   
         padding-left: 24px;
     }
+    @media screen and (min-width:1680px){
+        max-width: 528px;
+        height: 70px;
+        font-size: 20px;
+    }
 }
 .form-btn{
     width: 100%;
     height: 48px;
     font-weight: 700;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.2;
     letter-spacing: 0.08em;
     color: #FFFFFF;
     background: #FF6B09;
@@ -119,7 +147,14 @@
     margin-top: 20px;
 
     @media screen and (min-width:768px) {
-        max-width: 336px;   
+        max-width: 336px;  
+        margin-top: 12px; 
+    }
+    @media screen and (min-width:1680px){
+        max-width: 528px;
+        height: 70px;
+        font-size: 14px;
+        letter-spacing: 0.14em;
     }
 }
 
@@ -129,24 +164,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 480px;
+    margin: 0 auto;
     padding: 40px 60px;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        padding: 40px 32px;
+        max-width: 768px;   
+    }
+    @media screen and (min-width:1680px){
+        max-width: 1680px;
+    }
 
 }
 
 .logo-footer{
-    /* width: 80px; */
-    margin-bottom: 20px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:768px) {
+        margin-right: auto;
+    }
 }
 .img-instagram{
     width: 40px;
+    @media screen and (min-width:1680px){
+        margin-right: 596px;
+    }
 }
 .number-footer{
     display: flex;
     align-items: center;
     font-weight: 600;
     font-size: 12px;
-    line-height: 17px;
-    margin-bottom: 20px;
+    line-height: 1.4;
 
     color: #111518;
 
@@ -154,23 +206,55 @@
         letter-spacing: 0.08em;
         font-size: 14px;  
     }
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        line-height: 1.2;
+        border-right: 1px solid #B9B9B9;
+        height: 40px; 
+        margin-right: 24px; 
+        padding-right: 24px;
+
+        }
+    @media screen and (min-width:1680px){
+        font-size: 30px;
+
+    }
 }
 
 .svg-footer{
     margin-right: 8px;
+
+    @media screen and (min-width:768px){
+        width: 24px;
+        height: 23px;
+    }
+    @media screen and (min-width:1680px){
+        width: 30px;
+        height: 28px;
+    }
 }
-.last-footer{
-    width: 100%;
-    height: 80px;
-    background: #111518;
-}
+
 .last-footer{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background: #111518;
     font-weight: 500;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 2;
     color: #B9B9B9;
+
+    @media screen and (min-width:768px){
+        max-width: 768px;
+    }
+    @media screen and (min-width:1680px){
+        max-width: 1680px;
+    }
 }  
