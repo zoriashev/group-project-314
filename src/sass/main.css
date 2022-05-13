@@ -221,7 +221,7 @@ button {
     margin-right: auto;
   }
   .hero__benefit-box {
-    width: 143px;
+    max-width: 143px;
   }
   .hero__benefit {
     margin-bottom: 0px;
@@ -233,11 +233,6 @@ button {
 }
 
 @media screen and (min-width: 1681px) {
-  .hero__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .container {
     max-width: 1681px;
     padding: 0 15px;
@@ -262,19 +257,23 @@ button {
     line-height: 1.65;
   }
   .hero__benefits {
-    max-width: 688px;
+    max-width: 1569px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }
   .hero__benefit-box {
-    width: 143px;
+    max-width: 300px;
+    margin-left: -12px;
   }
   .hero__benefit {
-    margin-bottom: 0px;
-    margin-right: 21px;
+    max-width: 448px;
+    margin: 0;
   }
   .hero__benefit:last-child {
     margin-right: 0;
@@ -313,6 +312,8 @@ button {
   }
   .hero__benefit--name {
     font-size: 20px;
+    margin: 0;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

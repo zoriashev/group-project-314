@@ -160,8 +160,8 @@ margin-right: auto;
         margin-left: auto;
         margin-right: auto;
     }
-    .hero__benefit-box{
-        width: 143px;
+   .hero__benefit-box{
+        max-width: 143px;
     }
     .hero__benefit {
         margin-bottom: 0px;
@@ -173,11 +173,7 @@ margin-right: auto;
     }
 }
 @media screen and (min-width: 1681px) {
-    .hero__box {
-        display: flex;
-    }
-
-    .container {
+     .container {
         max-width: 1681px;
         padding: 0 15px;
     }
@@ -213,16 +209,16 @@ margin-right: auto;
 
     }
 
-    .hero__benefit-box {
-        max-width: 366px;
+   .hero__benefit-box {
+        max-width: 300px;
+        margin-left: -12px;
+        
     }
 
     .hero__benefit {
-        margin-bottom: 0px;
-        margin-right: 21px;
-        width: 448px;
+        max-width: 448px;
         margin: 0;
-        
+                
         &:last-child {
             margin-right: 0;
         }
@@ -248,7 +244,6 @@ margin-right: auto;
         background-image: url('../images/hero/hero_student.svg');
 
     }
-
     .hero__benefit--image2 {
         background-size: contain;
         height: 102px;
@@ -265,6 +260,8 @@ margin-right: auto;
     }
     .hero__benefit--name {
         font-size: 20px;
+        margin: 0;
+        padding: 0;
        
     }
 }
