@@ -2,7 +2,6 @@
 @media screen and (max-width: 767px), (min-width: 768px) {
   .guarantee {
     display: block;
-    padding: 40px 0 0 0;
   }
   .container {
     display: flex;
@@ -33,9 +32,9 @@
     }
     border-left: 1px dashed #b9b9b9;
     &::before {
-      content: url(../images/fire.svg);
+      content: url(../images/fire-mob-tab.svg);
       position: absolute;
-      margin-left: -10px;
+      margin-left: -7px;
     }
   }
   .our-guarantee_item__legend {
@@ -54,9 +53,6 @@
 }
 //768-1679px
 @media screen and (min-width: 768px) {
-  .guarantee {
-    padding: 40px 0 0 0;
-  }
   .container {
     padding: 32px 58px;
   }
@@ -75,9 +71,6 @@
 }
 //1680px
 @media screen and (min-width: 1680px) {
-  .guarantee {
-    padding: 120px 0 0 0;
-  }
   .container {
     padding: 60px 0;
   }
@@ -88,7 +81,12 @@
     font-size: 46px;
     line-height: calc(60 / 46);
   }
-
+  .our-guarantee_item {
+    &::before {
+      content: url(../images/fire.svg);
+      margin-left: -10px;
+    }
+  }
   .our-guarantee_item__legend {
     font-size: 20px;
     line-height: calc(28 / 20);
