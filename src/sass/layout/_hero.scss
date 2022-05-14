@@ -1,10 +1,11 @@
-.hero {
-   margin-left: auto;
-   margin-right: auto;
-   // background-image: url('../images/hero/hero_layout.svg');
-   //
-}
 
+.hero{
+   padding-top: 89px;
+   background: url('../images/hero/hero_vector_phone.svg') center 0 no-repeat;
+}
+.hero__name--format{
+   max-width: 400px;
+}
 .hero__name {
    font-family: 'Montserrat';
    font-style: normal;
@@ -15,7 +16,9 @@
    color: $primary-color;
    margin-bottom: 8px;
 }
-
+.hero__motivation--box{
+   max-width: 250px;
+}
 .hero__motivation {
    font-family: 'Montserrat';
    font-style: normal;
@@ -81,19 +84,19 @@
 
 .hero__benefit--image1 {
    height: 63px;
-   width: 61px;
+   width: 60px;
    background-image: url('../images/hero/hero_student.svg');
 }
 
 .hero__benefit--image2 {
    height: 63px;
-   width: 61px;
+   width: 60px;
    background-image: url('../images/hero/hero_mobile.svg');
 }
 
 .hero__benefit--image3 {
    height: 63px;
-   width: 61px;
+   width: 60px;
    background-image: url('../images/hero/hero_umbrella.svg');
 }
 .hero__benefit-box {
@@ -115,6 +118,14 @@
 @media screen and (min-width: 768px) {
    .hero__box {
       display: flex;
+   }
+      .hero__motivation--box {
+         max-width: 250px;
+      }
+  
+   .hero {
+      padding-top: 168px;
+      background: url('../images/hero/hero_vector_tablet.svg')  center 0 no-repeat;
    }
 
    .hero__image {
@@ -162,6 +173,14 @@
       margin-left: auto;
       margin-right: auto;
    }
+   
+   .hero {
+      padding-top: 150px;
+      background-image: url('../images/hero/hero_vector_desctop.svg');
+   }
+       .hero__name--format {
+          max-width: 560px;
+       }
 
    .hero__content {
       width: 560px;
@@ -171,6 +190,9 @@
    .hero__name {
       font-size: 58px;
    }
+      .hero__motivation--box {
+         max-width: 500px;
+      }
    .hero__motivation {
       font-size: 20px;
       line-height: 1.65;
@@ -197,6 +219,7 @@
          margin-right: 0;
       }
    }
+ 
    .hero__guaranteed--sp {
       color: $primary-color;
    }
