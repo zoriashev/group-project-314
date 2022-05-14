@@ -1,18 +1,7 @@
 //0px-767px
 @media screen and (max-width: 767px), (min-width: 768px) {
-  .guarantee {
-    display: block;
-  }
-  .container-guarantee-top {
-    display: flex;
-    width: 100%;
-    background-color: #f1f1f1;
-    padding: 40px 0;
-    justify-content: space-around;
-  }
   .container-guarantee {
-    width: 1088px;
-    padding: 0 16px;
+    margin: 0 auto;
   }
   .our-guarantee {
     font-family: 'Montserrat', sans-serif;
@@ -23,6 +12,10 @@
     letter-spacing: 0.03em;
     color: #111518;
     margin-bottom: 40px;
+  }
+  .our-guarantee_list {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
   }
   .our-guarantee_item {
     padding-bottom: 20px;
@@ -53,11 +46,9 @@
 }
 //768-1679px
 @media screen and (min-width: 768px) {
-  .container-guarantee-top {
-    padding: 32px 58px;
-  }
   .container-guarantee {
-    width: 704px;
+    width: 768px;
+    padding: 0 15px;
   }
   .our-guarantee {
     font-size: 26px;
@@ -71,11 +62,8 @@
 }
 //1680px
 @media screen and (min-width: 1680px) {
-  .container-guarantee-top {
-    padding: 60px 0;
-  }
   .container-guarantee {
-    width: 1088px;
+    width: 1680px;
   }
   .our-guarantee {
     font-size: 46px;
