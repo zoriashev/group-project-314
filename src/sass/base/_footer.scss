@@ -197,11 +197,16 @@
     }
 }
 .img-instagram {   
-     width: 40px;
-     cursor: pointer;
     @media screen and (min-width:1680px){
         margin-right: 596px;
     }
+}
+.svg-insta{
+    background-image:url("../images/footer-img/instagram.svg");
+    background-size: cover;
+    height: 40px;
+    display: block;
+    width: 40px
 }
 .number-footer{
     display: flex;
