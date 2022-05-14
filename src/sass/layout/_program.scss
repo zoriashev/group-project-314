@@ -1,0 +1,42 @@
+.section_theme_dark {
+    background-color: $primary-color;
+}
+
+.section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    /* or 26px */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $white-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 46px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        padding: 40px 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 0 32px;
+        width: 738px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        width: 1680px;
+        padding: 0 16px;
+    }
+}
