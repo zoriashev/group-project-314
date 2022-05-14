@@ -60,6 +60,9 @@
     font-size: 12px;
     padding-left: 32px;
   }
+  .our-guarantee_list {
+    padding: 40px 60px;
+  }
 }
 //1680px
 @media screen and (min-width: 1680px) {
@@ -80,5 +83,8 @@
     font-size: 20px;
     line-height: calc(28 / 20);
     padding-left: 41px;
+  }
+  .our-guarantee_list {
+    padding: 40px 280px;
   }
 }
