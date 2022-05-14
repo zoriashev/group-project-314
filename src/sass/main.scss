@@ -3,7 +3,7 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
+@import './base/mixin';
 @import './base/reset';
 @import './base/visually-hidden';
 @import './base/variables';
@@ -21,3 +21,4 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
+@import './base/mixin';
