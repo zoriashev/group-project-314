@@ -3,11 +3,12 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
+@import './base/mixin';
 @import './base/reset';
 @import './base/visually-hidden';
 @import './base/variables';
-
+@import './base/mixin';
+@import './base/general';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/advantages';
@@ -20,3 +21,4 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
+@import './layout/modal';

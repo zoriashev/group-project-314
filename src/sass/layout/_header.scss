@@ -1,0 +1,205 @@
+.header {
+   background-color: $white-color;
+   position: relative;
+}
+.header__container {
+   display: flex;
+   height: 60px;
+   @media screen and (max-width: 1199px) {
+      justify-content: space-between;
+   }
+   @media screen and (min-width: 768px) {
+      height: 80px;
+      align-items: center;
+   }
+}
+.logo {
+   width: 80px;
+   height: 29px;
+   @media screen and (min-width: 1680px) {
+      width: 128px;
+      height: 45px;
+   }
+}
+
+.button--menu {
+   fill: $primary-color;
+   background-color: transparent;
+   @media screen and (min-width: 1680px) {
+      display: none;
+      pointer-events: none;
+   }
+}
+.button--close {
+   background-color: transparent;
+}
+.nav__link {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 180%;
+   letter-spacing: 0.03em;
+   color: $white-color;
+   &:hover,
+   &:focus {
+      color: $accent-color;
+   }
+   @media screen and (min-width: 768px) {
+      font-size: 26px;
+   }
+}
+.header--button-menu {
+   color: $accent-color;
+   background-color: transparent;
+   text-align: center;
+   border: 2px solid $accent-color;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   height: 50px;
+   width: 100%;
+   padding: 15px 0;
+
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 15px;
+   text-transform: uppercase;
+
+   letter-spacing: 0.08em;
+   @media screen and (min-width: 768px) {
+      display: none;
+   }
+}
+.header--button {
+   @media screen and (max-width: 767px) {
+      display: none;
+      pointer-events: none;
+   }
+   @media screen and (min-width: 768px) {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+
+      color: $accent-color;
+      background-color: transparent;
+      border: 2px solid $accent-color;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      height: 50px;
+
+      min-width: 260px;
+      padding: 15px 5px;
+      margin-right: 40px;
+   }
+   @media screen and (min-width: 1680px) {
+      margin: 0;
+   }
+}
+
+button {
+   cursor: pointer;
+}
+
+.header__top {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+   align-items: center;
+}
+.header__buttons {
+   display: flex;
+   align-items: center;
+}
+
+.header__top--mobile {
+   margin-bottom: 40px;
+   padding: 0;
+}
+
+.menu--container {
+   @media screen and (max-width: 1679px) {
+      opacity: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 1001;
+      background-color: rgba(17, 21, 24, 0.9);
+      @include transition(transform, opacity);
+      padding: 20px;
+
+      &.is-hidden {
+         opacity: 0;
+         pointer-events: none;
+         transform: translateX(-100%);
+      }
+   }
+   @media screen and (min-width: 1680px) {
+      display: none;
+      pointer-events: none;
+   }
+}
+.nav {
+   @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+   }
+}
+
+.nav__list {
+   margin-bottom: 40px;
+   height: 178px;
+   justify-content: space-between;
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+   }
+}
+.icon--close {
+   fill: $white-color;
+   background-color: transparent;
+}
+.button--close {
+   @media screen and (min-width: 1680px) {
+      display: none;
+      pointer-events: none;
+   }
+}
+.nav-desktop {
+   @media screen and (max-width: 1679px) {
+      display: none;
+      pointer-events: none;
+   }
+}
+.nav-desktop__list {
+   display: flex;
+}
+.nav-desktop__item {
+   margin-right: 40px;
+}
+.nav-desktop__link {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+
+   color: $secondary-color;
+
+   &:hover,
+   &:focus {
+      color: $accent-color;
+   }
+}
