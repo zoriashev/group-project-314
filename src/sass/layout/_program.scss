@@ -2,41 +2,323 @@
     background-color: $primary-color;
 }
 
-.section__title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 130%;
-    /* or 26px */
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $white-color;
-
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-    }
-
-    @media screen and (min-width: 1680px) {
-        font-size: 46px;
-    }
-}
-
 .container {
     margin: 0 auto;
+    padding: 0 15px;
 
     @media screen and (min-width: 480px) {
         width: 480px;
-        padding: 40px 20px;
     }
 
     @media screen and (min-width: 768px) {
-        padding: 0 32px;
-        width: 738px;
+        width: 768px;
     }
 
     @media screen and (min-width: 1680px) {
         width: 1680px;
-        padding: 0 16px;
     }
+}
+
+.section__title {
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: $white-color;
+}
+
+// .semester-list {
+//     margin-left: 47px;
+//     border-left: 1px solid #FFFFFF;
+// }
+
+.program-content-wrapper {
+    margin-left: 47px;
+    padding-left: 26px;
+}
+
+.semester-list__item {
+    position: relative;
+    padding-left: 26px;
+}
+
+
+
+.semester-list__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.semester-list__name {
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.program-list__name {
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    color: $accent-color;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 12px;
+        height: 1px;
+        background-color: $accent-color;
+    }
+}
+
+.program-list__item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.theme-list__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    color: $secondary-color;
+    opacity: 0.5;
+}
+
+.program-list__name_span {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.program-container {
+    position: relative;
+}
+
+.program-container::after {
+    content: "";
+    position: absolute;
+    // bottom: -105px;
+    // right: 0;
+    height: 100%;
+    // max-height: 137px;
+    width: 100%;
+    // max-width: 150px;
+    // background-image: url(../images/program-img-mobile.png);
+    // background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+// 0px - 1199px
+@media screen and (max-width: 1199px) {
+    .semester-list__name::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -6px;
+        width: 12px;
+        height: 12px;
+        background-color: $accent-color;
+        border-radius: 50%;
+    }
+
+    .semester-list {
+        border-left: 1px solid #FFFFFF;
+    }
+}
+
+
+// 0px - 767px
+@media screen and (max-width: 767px) {
+    .section_theme_dark {
+        padding-top: 40px;
+        padding-bottom: 604px;
+    }
+
+    .section__title {
+        text-align: center;
+    }
+
+    .semester-list {
+        margin-left: 47px;
+    }
+
+    .program-content-wrapper {
+        margin-left: 47px;
+        padding-left: 26px;
+    }
+
+    .program-container::after {
+        content: "";
+        bottom: -105px;
+        right: 0;
+        max-height: 137px;
+        max-width: 150px;
+        background-image: url(../images/program-img-mobile.png);
+        background-position: bottom right;
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .program-container::after {
+        background-image: url(../images/program-img-mobile@2x.png);
+        }
+    }
+}
+
+// 768px +
+@media screen and (min-width: 768px) {
+    .section_theme_dark {
+        padding-top: 60px;
+        padding-bottom: 364px;
+    }
+    
+    .section__title {
+        font-size: 26px;
+    }
+
+    .semester-list {
+        margin-left: 88px;
+    }
+
+    .semester-list__item {
+        position: relative;
+        padding-left: 113px;
+    }
+
+    .program-content-wrapper {
+        margin-left: 88px;
+        padding-left: 113px;
+    }
+
+    .program-list {
+        display: flex;
+    }
+
+    .program-list__item:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .program-container::after {
+        content: "";
+        bottom: -100px;
+        right: 0;
+        background-image: url(../images/program-img-tablet.png);
+        background-position: bottom right;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .program-container::after {
+            background-image: url(../images/program-img-tablet@2x.png);
+        }    
+    }
+}
+
+// 1680px +
+@media screen and (min-width: 1680px) {
+    .section_theme_dark {
+        padding-top: 80px;
+        padding-bottom: 436px;
+    }
+
+    .section__title {
+        margin-bottom: 88px;
+        font-size: 46px;
+    }
+
+    .semester-list__name {
+        font-size: 28px;
+    }
+
+    .program-list__name {
+        font-size: 20px;
+        line-height: 1.65;
+    }
+
+    .theme-list__name {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+
+    .program-container::after {
+        content: "";
+        bottom: -100px;
+        right: 0;
+        background-image: url(../images/program-img-desktop.png);
+        background-position: bottom right;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .program-container::after {
+            background-image: url(../images/program-img-desktop@2x.png);
+        }
+    }
+
+    .program-list {
+        display: block;
+    }
+
+    .semester-list {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        border-top: 1px solid #FFFFFF;
+        
+    }
+
+    .semester-list__item {
+        position: relative;
+        padding-left: 0;
+        margin-left: 40px;
+        width: 240px;
+        padding-top: 48px;
+    }
+
+    .semester-list__item::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -6px;
+        width: 12px;
+        height: 12px;
+        background-color: $accent-color;
+        border-radius: 50%;
+    }
+
+    .program-container::after {
+        content: "";
+        bottom: -300px;
+        left: 0;
+        background-image: url(../images/program-img-desktop.png);
+        background-position: bottom left;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .program-container::after {
+            background-image: url(../images/program-img-desktop@2x.png);
+        }
+    }
+
+    
 }

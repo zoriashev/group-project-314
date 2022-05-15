@@ -18,16 +18,19 @@
 
 .container {
   margin: 0 auto;
+  padding: 0 15px;
+
   @media screen and (min-width: 480px) {
     width: 480px;
-    padding: 0 20px;
   }
+
   @media screen and (min-width: 768px) {
-    padding: 0 32px;
-    width: 738px;
+    width: 768px;
   }
+
   @media screen and (min-width: 1680px) {
     width: 1680px;
-    padding: 0 16px;
   }
 }
+
+
