@@ -1,13 +1,9 @@
 .img-footer {
    max-width: 480px;
-   height: 463px;
-   padding: 40px 0;
-   text-align: center;
    margin: 0 auto;
-   color: #ffffff;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    background: #111518;
-   background-repeat: no- epeat;
+   background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
 
@@ -31,8 +27,6 @@
 
    @media screen and (min-width: 768px) {
       max-width: 768px;
-      height: 459px;
-      padding: 40px;
       background-image: linear-gradient(
             (rgba(17, 21, 24, 0.7)),
             rgba(17, 21, 24, 0.7)
@@ -51,8 +45,6 @@
    }
    @media screen and (min-width: 1680px) {
       max-width: 1680px;
-      height: 794px;
-      padding: 80px 295px;
       background-image: linear-gradient(
             (rgba(17, 21, 24, 0.7)),
             rgba(17, 21, 24, 0.7)
@@ -70,6 +62,26 @@
       }
    }
 }
+.footer-blok{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 280px;
+   padding: 40px 0;
+   text-align: center;
+   margin: 0 auto;
+   color: #ffffff;
+
+   @media screen and (min-width: 768px){
+      max-width: 688px;
+   }
+   @media screen and (min-width: 1680px){
+      padding: 80px 0;
+      max-width: 1090px;
+
+   }
+
+}
 .orang-text {
    color: #ff6b09;
 }
@@ -82,10 +94,12 @@
 
    @media screen and (min-width: 768px) {
       font-size: 26px;
+      letter-spacing: 0.05em;
       margin-bottom: 40px;
    }
    @media screen and (min-width: 1680px) {
       font-size: 46px;
+      letter-spacing: 0.08em;
    }
 }
 
@@ -103,14 +117,16 @@
    }
 }
 .form-footer {
+   max-width: 280px;
    margin-top: 40px;
 
    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      max-width: 336px;
       margin-top: 24px;
+   }
+   @media screen and (min-width: 1680px){
+      max-width: 528px;
+      margin-top: 60px;
    }
 }
 
@@ -139,18 +155,12 @@
    }
 
    @media screen and (min-width: 768px) {
-      max-width: 336px;
       padding-left: 24px;
    }
    @media screen and (min-width: 1680px) {
-      max-width: 528px;
       height: 70px;
       font-size: 20px;
    }
-}
-.label-footer {
-   max-width: 528px;
-   max-height: 70px;
 }
 .form-btn {
    width: 100%;
