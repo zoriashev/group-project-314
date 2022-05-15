@@ -1,4 +1,4 @@
-<header>
+<header class="header">
    <div class="container">
       <div class="header__top">
          <a class="button--logo" href="#">
@@ -11,15 +11,36 @@
             />
          </a>
 
-         <button data-menu-open type="button" class="button--menu">
-            <svg
-               aria-label="Переключатель мобильного меню"
-               width="40"
-               height="40"
-            >
-               <use href="./images/sprite.svg#icon-menu-burger"></use>
-            </svg>
-         </button>
+         <div class="header__buttons">
+            <nav class="nav nav-desktop">
+               <ul class="nav-desktop__list">
+                  <li class="nav-desktop__item">
+                     <a class="nav-desktop__link" href="">Studying program</a>
+                  </li>
+                  <li class="nav-desktop__item">
+                     <a class="nav-desktop__link" href="">About</a>
+                  </li>
+                  <li class="nav-desktop__item">
+                     <a class="nav-desktop__link" href="">Training options</a>
+                  </li>
+                  <li class="nav-desktop__item">
+                     <a class="nav-desktop__link" href="">Contacts</a>
+                  </li>
+               </ul>
+            </nav>
+            <button data-modal-open class="header--button" type="button">
+               Consultation by phone
+            </button>
+            <button data-menu-open type="button" class="button--menu">
+               <svg
+                  aria-label="Переключатель мобильного меню"
+                  width="40"
+                  height="40"
+               >
+                  <use href="./images/sprite.svg#icon-menu-burger"></use>
+               </svg>
+            </button>
+         </div>
       </div>
       <div data-menu class="menu--container is-hidden">
          <div class="header__top header__top--mobile">
@@ -62,9 +83,46 @@
             </ul>
          </nav>
 
-         <button class="header--button" type="button">
+         <button data-modal-open class="header--button-menu" type="button">
             Consultation by phone
          </button>
       </div>
    </div>
 </header>
+
+<div>
+   <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+         <button data-modal-close type="button" class="close-button">
+            <svg class="close-button__icon">
+               <use href="./images/sprite.svg#icon-close-button"></use>
+            </svg>
+         </button>
+
+         <p class="modal__heading">Leave your data to get a consultation</p>
+
+         <form class="form">
+            <div class="form-field">
+               <input class="input" id="name" type="text" placeholder=" " />
+               <label class="label" for="name">Name</label>
+            </div>
+
+            <div class="form-field">
+               <input class="input" id="tel" type="tel" placeholder=" " />
+               <label class="label" for="tel">Phone</label>
+            </div>
+
+            <label class="label" for="comment"></label>
+            <textarea
+               class="textarea"
+               placeholder="Message"
+               name="text"
+               id="comment"
+               rows="10"
+            ></textarea>
+
+            <button class="button submit-button" type="submit">SEND</button>
+         </form>
+      </div>
+   </div>
+</div>

@@ -1,11 +1,34 @@
+.header {
+   background-color: $white-color;
+   position: relative;
+}
+.header__container {
+   display: flex;
+   height: 60px;
+   @media screen and (max-width: 1199px) {
+      justify-content: space-between;
+   }
+   @media screen and (min-width: 768px) {
+      height: 80px;
+      align-items: center;
+   }
+}
 .logo {
    width: 80px;
    height: 29px;
+   @media screen and (min-width: 1680px) {
+      width: 128px;
+      height: 45px;
+   }
 }
 
 .button--menu {
    fill: $primary-color;
    background-color: transparent;
+   @media screen and (min-width: 1680px) {
+      display: none;
+      pointer-events: none;
+   }
 }
 .button--close {
    background-color: transparent;
@@ -22,8 +45,11 @@
    &:focus {
       color: $accent-color;
    }
+   @media screen and (min-width: 768px) {
+      font-size: 26px;
+   }
 }
-.header--button {
+.header--button-menu {
    color: $accent-color;
    background-color: transparent;
    text-align: center;
@@ -32,10 +58,43 @@
    height: 50px;
    min-width: 280px;
    padding: 15px auto;
+
    @media screen and (min-width: 768px) {
       display: none;
    }
 }
+.header--button {
+   @media screen and (max-width: 767px) {
+      display: none;
+      pointer-events: none;
+   }
+   @media screen and (min-width: 768px) {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+
+      color: $accent-color;
+      background-color: transparent;
+      border: 2px solid $accent-color;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      height: 50px;
+
+      min-width: 260px;
+      padding: 15px 5px;
+      margin-right: 40px;
+   }
+   @media screen and (min-width: 1680px) {
+      margin: 0;
+   }
+}
+
 button {
    cursor: pointer;
 }
@@ -44,7 +103,13 @@ button {
    display: flex;
    justify-content: space-between;
    padding-top: 20px;
+   align-items: center;
 }
+.header__buttons {
+   display: flex;
+   align-items: center;
+}
+
 .header__top--mobile {
    margin-bottom: 40px;
    padding: 0;
@@ -69,13 +134,14 @@ button {
          transform: translateX(-100%);
       }
    }
-   // @media screen and (min-width: 768px) {
-   //    display: flex;
-   // }
-   // @media screen and (min-width: 1200px) {
-   //    flex-grow: 1;
-   // }
+   @media screen and (min-width: 1680px) {
+      display: none;
+      pointer-events: none;
+   }
 }
+.nav {
+}
+
 .nav__list {
    margin-bottom: 40px;
    @media screen and (min-width: 768px) {
@@ -89,22 +155,44 @@ button {
       margin: 0 auto;
    }
 }
-.header {
-   background-color: $white-color;
-   position: relative;
-}
-.header__container {
-   display: flex;
-   height: 60px;
-   @media screen and (max-width: 1199px) {
-      justify-content: space-between;
-   }
-   @media screen and (min-width: 768px) {
-      height: 80px;
-      align-items: center;
-   }
-}
+
 .icon--close {
    fill: $white-color;
    background-color: transparent;
+}
+.button--close {
+   @media screen and (min-width: 1680px) {
+      display: none;
+      pointer-events: none;
+   }
+}
+.nav-desktop {
+   @media screen and (max-width: 1679px) {
+      display: none;
+      pointer-events: none;
+   }
+}
+.nav-desktop__list {
+   display: flex;
+}
+.nav-desktop__item {
+   margin-right: 40px;
+}
+.nav-desktop__link {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+
+   color: $secondary-color;
+
+   &:hover,
+   &:focus {
+      color: $accent-color;
+   }
 }
