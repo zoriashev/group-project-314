@@ -7,7 +7,7 @@
 @import './base/reset';
 @import './base/visually-hidden';
 @import './base/variables';
-@import './base/footer';
+@import './base/mixin';
 @import './base/general';
 @import './layout/header';
 @import './layout/hero';
@@ -21,5 +21,4 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
-@import './base/mixin';
 @import './layout/modal';
