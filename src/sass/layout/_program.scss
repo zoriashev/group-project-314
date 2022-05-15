@@ -302,7 +302,7 @@
    }
 }
 .section-program__item {
-   //    position: relative;
+   position: relative;
 
    margin: auto;
    border: 1px;
@@ -311,15 +311,15 @@
    background-color: #ffffff;
    @media screen and (min-width: 320px) {
       width: 280px;
-      //   bottom: 343px;
+      bottom: 310px;
    }
    @media screen and (min-width: 768px) {
       width: 704px;
-      //   bottom: 173px;
+      bottom: 115px;
    }
    @media screen and (min-width: 1680px) {
       width: 1648px;
-      //   bottom: 215px;
+      bottom: 200px;
    }
 }
 .section-program__title {
