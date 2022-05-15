@@ -1,3 +1,110 @@
-// .team-item__photo {
-//   width: 100%;
-// }
+// // .team-item__photo {
+// //   width: 100%;
+// // }
+
+.section__about {
+   padding-bottom: 40px;
+
+   @media screen and (min-width: 1680px) {
+      padding-bottom: 80px;
+   }
+}
+.section__about__title {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 130%;
+   letter-spacing: 0.03em;
+   color: $primary-color;
+   padding-bottom: 20px;
+   @media screen and (min-width: 768px) {
+      font-size: 26px;
+      padding-bottom: 40px;
+   }
+   @media screen and (min-width: 1680px) {
+      font-size: 46px;
+      padding-bottom: 80px;
+   }
+}
+
+.about__name {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 1.3;
+   letter-spacing: 0.03em;
+   color: $primary-color;
+   @media screen and (min-width: 1680px) {
+      font-size: 30px;
+   }
+}
+
+.about__experience {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.21;
+   letter-spacing: 0.06em;
+   color: $primary-color;
+   @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.25;
+   }
+   @media screen and (min-width: 1680px) {
+      font-size: 16px;
+   }
+}
+
+.about__text {
+   padding-bottom: 8px;
+   @media screen and (min-width: 768px) {
+      padding-bottom: 24px;
+   }
+   @media screen and (min-width: 1680px) {
+      padding-bottom: 20px;
+   }
+
+   .about__education {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1, 67;
+      color: $secondary-color;
+      @media screen and (min-width: 768px) {
+         font-size: 10px;
+         line-height: 2;
+      }
+      @media screen and (min-width: 1680px) {
+         font-size: 18px;
+         line-height: 1, 56;
+      }
+   }
+}
+
+.about__icon__check {
+   fill: $accent-color;
+}
+
+//  &::before {
+//          content: url(../images/spri
+// ;
+// //          position: absolute;
+// //          margin-left: -7px;
+
+.about__link {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 1, 67;
+   color: $accent-color;
+   text-decoration: underline;
+   @media screen and (min-width: 1680px) {
+      font-size: 18px;
+      line-height: 1, 56;
+   }
+}
