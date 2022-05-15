@@ -65,24 +65,52 @@
 // letter-spacing: 0.03em;
 
 // color: #111518;
+.about__text {
+   padding-bottom: 8px;
+   @media screen and (min-width: 768px) {
+      padding-bottom: 24px;
+   }
+   @media screen and (min-width: 1680px) {
+      padding-bottom: 20px;
+   }
 
-.about__education {
+   .about__education {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1, 67;
+      color: $secondary-color;
+      @media screen and (min-width: 768px) {
+         font-size: 10px;
+         line-height: 2;
+      }
+      @media screen and (min-width: 1680px) {
+         font-size: 18px;
+         line-height: 1, 56;
+      }
+   }
+}
+
+.about__icon__check {
+   fill: $accent-color;
+}
+
+//  &::before {
+//          content: url(../images/spri
+// ;
+// //          position: absolute;
+// //          margin-left: -7px;
+
+.about__link {
    font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: 500;
    font-size: 12px;
    line-height: 1, 67;
-   color: $secondary-color;
-   @media screen and (min-width: 768px) {
-      font-size: 10px;
-      line-height: 2;
-   }
+   color: $accent-color;
    @media screen and (min-width: 1680px) {
       font-size: 18px;
       line-height: 1, 56;
    }
-}
-
-.about__icons__done {
-   fill: $accent-color;
 }
