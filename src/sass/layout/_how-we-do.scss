@@ -1,13 +1,19 @@
 .section__how-we-do {
    background-color: $white-color;
-   @media screen and (max-width: 1679px) {
-      padding: 40px 0;
-   }
-
+  
    @media screen and (min-width: 1680px) {
-      margin-top: -215px;
+      margin-top: -215px;  
+     padding: 80px 0;
+
+  }
+    @media screen and (max-width: 767px) {
+            margin-top: -343px;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-top: -175px;
+    }
    }
-}
 
 .section-title {
    font-family: 'Montserrat';
@@ -30,6 +36,22 @@
       font-size: 46px;
       text-align: left;
    }
+
+   
+
+.section-title__how-we-do {
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        margin-bottom: 80px;
+        text-align: left;
+    }
+
 }
 
 .methods-list {
