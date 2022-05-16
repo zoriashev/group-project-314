@@ -163,6 +163,10 @@
         margin-right: 32px;
     }
 
+    .program-list__item {
+        flex-basis: 150px;
+    }
+
     .program-container::after {
         bottom: -100px;
         right: 0;
