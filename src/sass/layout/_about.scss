@@ -44,8 +44,15 @@
       margin-right: 173px;
    }
 }
+.about__content__block {
+   border-bottom: 1px solid $secondary-color;
+   margin-bottom: 20px;
+   @media screen and (min-width: 1680px) {
+      margin-bottom: 32px;
+   }
+}
 
-.about__content__name {
+.about__content__block__name {
    font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: 800;
