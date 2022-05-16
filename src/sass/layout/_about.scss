@@ -4,7 +4,7 @@
 
 .section__about {
    padding-bottom: 40px;
-
+   margin: 0 auto;
    @media screen and (min-width: 1680px) {
       padding-bottom: 80px;
    }
@@ -28,7 +28,24 @@
    }
 }
 
-.about__name {
+.about {
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
+}
+
+.about__photo {
+   max-width: 243px;
+   @media screen and (min-width: 768px) {
+      margin-right: 60px;
+   }
+   @media screen and (min-width: 1680px) {
+      max-width: 528px;
+      margin-right: 173px;
+   }
+}
+
+.about__content__name {
    font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: 800;
@@ -36,12 +53,18 @@
    line-height: 1.3;
    letter-spacing: 0.03em;
    color: $primary-color;
+   padding-top: 20px;
+   padding-bottom: 8px;
+   @media screen and (min-width: 768px) {
+      padding-top: 0px;
+   }
    @media screen and (min-width: 1680px) {
       font-size: 30px;
+      padding-bottom: 16px;
    }
 }
 
-.about__experience {
+.about__content__experience {
    font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: 600;
@@ -49,62 +72,102 @@
    line-height: 1.21;
    letter-spacing: 0.06em;
    color: $primary-color;
+   padding-left: 27px;
    @media screen and (min-width: 768px) {
       font-size: 12px;
       line-height: 1.25;
+      max-width: 375px;
    }
    @media screen and (min-width: 1680px) {
       font-size: 16px;
+      padding-left: 60px;
+      max-width: 530px;
    }
 }
-
-.about__text {
+.about__content__stripe {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.65;
+   color: $accent-color;
+   padding-top: 20px;
    padding-bottom: 8px;
    @media screen and (min-width: 768px) {
-      padding-bottom: 24px;
+      padding-top: 4px;
+      padding-bottom: 4px;
    }
    @media screen and (min-width: 1680px) {
-      padding-bottom: 20px;
-   }
-
-   .about__education {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1, 67;
-      color: $secondary-color;
-      @media screen and (min-width: 768px) {
-         font-size: 10px;
-         line-height: 2;
-      }
-      @media screen and (min-width: 1680px) {
-         font-size: 18px;
-         line-height: 1, 56;
-      }
+      padding-top: 15px;
+      padding-bottom: 12px;
    }
 }
 
-.about__icon__check {
-   fill: $accent-color;
-}
-
-//  &::before {
-//          content: url(../images/spri
-// ;
-// //          position: absolute;
-// //          margin-left: -7px;
-
-.about__link {
+.about__content__text {
    font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: 500;
    font-size: 12px;
-   line-height: 1, 67;
+   line-height: 1.67;
+   color: $secondary-color;
+   padding-bottom: 8px;
+   @media screen and (min-width: 768px) {
+      padding-bottom: 24px;
+      font-size: 10px;
+      line-height: 2;
+      max-width: 401px;
+   }
+   @media screen and (min-width: 1680px) {
+      padding-bottom: 20px;
+      font-size: 18px;
+      line-height: 1.56;
+      max-width: 667px;
+   }
+
+   .about__content__education {
+      @media screen and (min-width: 1680px) {
+         padding-bottom: 19px;
+      }
+   }
+}
+
+.about__content__icon-check {
+   padding-bottom: 14px;
+   &::before {
+      position: absolute;
+      content: url(../images/about/check.svg);
+      margin-left: -26px;
+   }
+
+   &:last-child {
+      @media screen and (max-width: 767px) {
+         padding-bottom: 0px;
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      padding-bottom: 30px;
+   }
+   @media screen and (min-width: 1680px) {
+      padding-bottom: 28px;
+      &::before {
+         position: absolute;
+         content: url(../images/about/check-desk.svg);
+         margin-left: -60px;
+      }
+   }
+}
+
+.about__content__link {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 1.67;
    color: $accent-color;
    text-decoration: underline;
    @media screen and (min-width: 1680px) {
       font-size: 18px;
-      line-height: 1, 56;
+      line-height: 1.56;
    }
 }
