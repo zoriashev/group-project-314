@@ -101,6 +101,7 @@
    //480-767px
    @media screen and (min-width: 480px) {
       .about-user {
+         max-width: 412px;
          margin: auto;
          margin-bottom: 40px;
       }
@@ -128,13 +129,11 @@
 
    .arrow-left {
       display: block;
-      margin: auto;
-      margin-right: 19px;
+      margin: auto auto auto 0px;
    }
    .arrow-right {
       display: block;
-      margin: auto;
-      margin-left: 19px;
+      margin: auto 0px auto auto;
    }
    .user-hub_foto-link {
       margin-bottom: 0px;
@@ -199,7 +198,7 @@
       margin-bottom: 40px;
    }
    .about-user {
-      width: 706px;
+      max-width: 706px;
    }
    .user-hub_img__foto {
       margin-bottom: 15px;
