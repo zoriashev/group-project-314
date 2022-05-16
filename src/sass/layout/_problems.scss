@@ -1,15 +1,15 @@
-.section-problems__icon {
+.section-problems-dark__icon {
    display: none;
 }
 
-.section-problems {
+.section-problems-dark {
    padding-top: 0;
    min-height: 545px;
    background-color: #111518;
    margin: auto;
 }
 
-.section__title {
+.section-problems-dark__title {
    padding-top: 24px;
    padding-bottom: 24px;
    font-style: normal;
@@ -20,27 +20,27 @@
    line-height: 1.29;
    color: #ffffff;
 }
-.section__title-accent {
+.section-problems-dark__title-accent {
    color: #ff6b09;
 }
 
 @media screen and (min-width: 768px) {
-   .section-problems {
+   .section-problems-dark {
       min-height: 340px;
    }
-   .section__title {
+   .section-problems-dark__title {
       padding-top: 40px;
       padding-bottom: 25px;
    }
-   .section-problems {
+   .section-problems-dark-problems {
       padding-bottom: 0;
    }
 }
 @media screen and (min-width: 1680px) {
-   .section-problems {
+   .section-problems-dark {
       min-height: 560px;
    }
-   .section__title {
+   .section-problems-dark__title {
       padding-top: 80px;
       padding-bottom: 0;
       font-size: 46px;
@@ -51,7 +51,7 @@
       min-height: 560px;
       overflow: hidden;
    }
-   .section-problems__icon {
+   .section-problems-dark__icon {
       display: block;
       position: absolute;
       top: 88px;
@@ -61,6 +61,9 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
    }
 }
+
+// Ira
+
 .section-problems__item {
    position: relative;
 
