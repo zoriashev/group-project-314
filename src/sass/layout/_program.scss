@@ -4,6 +4,12 @@
 
 .section__title_theme_dark {
     margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
     color: $white-color;
 }
 
@@ -143,7 +149,7 @@
         padding-bottom: 364px;
     }
 
-    .section__title {
+    .section__title_theme_dark {
         font-size: 26px;
     }
 
