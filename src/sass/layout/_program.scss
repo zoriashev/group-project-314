@@ -4,12 +4,6 @@
 
 .section__title_theme_dark {
     margin-bottom: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
     color: $white-color;
 }
 
@@ -19,8 +13,6 @@
 
 .semester-list__name {
     margin-bottom: 4px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 2;
@@ -31,10 +23,6 @@
 
 .program-list__name {
     margin-bottom: 4px;
-    position: relative;
-    padding-left: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.67;
@@ -42,19 +30,12 @@
     color: $accent-color;
 
     &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 12px;
-        height: 1px;
-        background-color: $accent-color;
+        content: "—";
+        color: $accent-color;
     }
 }
 
-.theme-list__name {
-    font-family: 'Montserrat';
-    font-style: normal;
+.theme-list__name, .theme-list-text {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
@@ -63,10 +44,14 @@
     opacity: 0.5;
 }
 
-.program-list__name_span {
+.program-list-span {
     display: block;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    &::before {
+            content: "—";
+            color: $accent-color;
+        }
 }
 
 .program-container {
@@ -79,7 +64,7 @@
     background-size: cover;
 }
 
-// 0px - 1199px
+// 0px - 1679px
 @media screen and (max-width: 1679px) {
     .semester-list__item::before {
         content: "";
@@ -149,10 +134,6 @@
         padding-bottom: 364px;
     }
 
-    .section__title_theme_dark {
-        font-size: 26px;
-    }
-
     .semester-list {
         margin-left: 88px;
     }
@@ -199,7 +180,6 @@
 
     .section__title_theme_dark {
         margin-bottom: 88px;
-        font-size: 46px;
     }
 
     .semester-list {
