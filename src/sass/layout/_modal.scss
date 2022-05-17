@@ -120,8 +120,9 @@ body.modal-open {
    margin-bottom: 60px;
    border: 2px solid $secondary-color;
    height: 50px;
-   color: black;
+   color: $white-color;
    width: 100%;
+
 }
 
 .input:focus + .label,
