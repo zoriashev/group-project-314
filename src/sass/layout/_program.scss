@@ -80,25 +80,26 @@
 }
 
 // 0px - 1199px
-@media screen and (max-width: 1199px) {
-   .semester-list__item::before {
-      content: '';
-      position: absolute;
-      top: 8px;
-      left: -6px;
-      width: 12px;
-      height: 12px;
-      background-color: $accent-color;
-      border-radius: 50%;
-   }
 
-   .semester-list {
-      border-left: 1px solid #ffffff;
-   }
+@media screen and (max-width: 1679px) {
+    .semester-list__item::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -6px;
+        width: 12px;
+        height: 12px;
+        background-color: $accent-color;
+        border-radius: 50%;
+    }
 
-   .semester-list__item:not(:last-child) {
-      margin-bottom: 40px;
-   }
+    .semester-list {
+        border-left: 1px solid #FFFFFF;
+    }
+
+    .semester-list__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
 }
 
 // 0px - 767px
