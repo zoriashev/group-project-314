@@ -3,7 +3,7 @@
    padding-top: 89px;
    background: url('../images/hero/hero_vector_phone.svg') center 0 no-repeat;
 }
-.hero__name--format{
+.hero__name-format{
    max-width: 400px;
 }
 .hero__name {
@@ -16,7 +16,7 @@
    color: $primary-color;
    margin-bottom: 8px;
 }
-.hero__motivation--box{
+.hero__motivation-box{
    max-width: 250px;
 }
 .hero__motivation {
@@ -35,7 +35,7 @@
    color: $primary-color;
 }
 
-.hero__guaranteed--sp {
+.hero__guaranteed-sp {
    font-weight: 700;
    color: $accent-color;
    height: 48px;
@@ -92,19 +92,19 @@
    }
 }
 
-.hero__benefit--image1 {
+.hero__benefit-image1 {
    height: 63px;
    width: 60px;
    background-image: url('../images/hero/hero_student.svg');
 }
 
-.hero__benefit--image2 {
+.hero__benefit-image2 {
    height: 63px;
    width: 60px;
    background-image: url('../images/hero/hero_mobile.svg');
 }
 
-.hero__benefit--image3 {
+.hero__benefit-image3 {
    height: 63px;
    width: 60px;
    background-image: url('../images/hero/hero_umbrella.svg');
@@ -115,7 +115,7 @@
    max-width: 180px;
    margin-left: 12px;
 }
-.hero__benefit--name {
+.hero__benefit-name {
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 700;
@@ -129,7 +129,7 @@
    .hero__box {
       display: flex;
    }
-      .hero__motivation--box {
+      .hero__motivation-box {
          max-width: 250px;
       }
   
@@ -215,7 +215,7 @@
    .hero__name {
       font-size: 58px;
    }
-      .hero__motivation--box {
+      .hero__motivation-box {
          max-width: 500px;
       }
    .hero__motivation {
@@ -245,7 +245,7 @@
       }
    }
  
-   .hero__guaranteed--sp {
+   .hero__guaranteed-sp {
       color: $primary-color;
    }
    .hero__button {
@@ -258,26 +258,26 @@
    .hero__form {
       font-size: 14px;
    }
-   .hero__benefit--image1 {
+   .hero__benefit-image1 {
       background-size: contain;
       height: 102px;
       width: 99px;
       background-image: url('../images/hero/hero_student.svg');
    }
-   .hero__benefit--image2 {
+   .hero__benefit-image2 {
       background-size: contain;
       height: 102px;
       width: 99px;
       background-image: url('../images/hero/hero_mobile.svg');
    }
 
-   .hero__benefit--image3 {
+   .hero__benefit-image3 {
       background-size: contain;
       height: 102px;
       width: 99px;
       background-image: url('../images/hero/hero_umbrella.svg');
    }
-   .hero__benefit--name {
+   .hero__benefit-name {
       font-size: 20px;
       margin: 0;
       padding: 0;
