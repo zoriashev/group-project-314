@@ -24,22 +24,22 @@
    .arrow-right {
       display: none;
    }
-   .user-hub_foto-link {
+   .user-hub-foto-link {
       text-align: center;
       margin-bottom: 30px;
    }
-   .user-hub_img {
+   .user-hub-img {
       display: flex;
       justify-content: center;
       margin-bottom: 30px;
    }
-   .user-hub_img__foto {
+   .user-hub-img-foto {
       width: 90px;
    }
    .about-user {
       margin-bottom: 40px;
    }
-   .about-user_name {
+   .about-user-name {
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
       font-size: 14px;
@@ -49,7 +49,7 @@
       color: #ff6b09;
       margin-bottom: 16px;
    }
-   .about-user_education {
+   .about-user-education {
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-size: 12px;
@@ -61,7 +61,7 @@
       margin-bottom: 16px;
    }
 
-   .about-user_article__normal-color {
+   .about-user-article-normal-color {
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-size: 12px;
@@ -70,7 +70,7 @@
       color: #3d3d3d;
       padding: 0 25px;
    }
-   .about-user_article__orange-color {
+   .about-user-article-orange-color {
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-size: 12px;
@@ -135,14 +135,14 @@
       display: block;
       margin: auto 0px auto auto;
    }
-   .user-hub_foto-link {
+   .user-hub-foto-link {
       margin-bottom: 0px;
       margin-right: 44px;
    }
-   .user-hub_img {
+   .user-hub-img {
       margin-bottom: 0px;
    }
-   .user-hub_img__foto {
+   .user-hub-img-foto {
       width: 150px;
       margin-bottom: 27px;
    }
@@ -150,21 +150,21 @@
       margin-bottom: 0px;
       margin: 0;
    }
-   .about-user_name {
+   .about-user-name {
       font-size: 20px;
       line-height: calc(24 / 20);
       text-align: left;
    }
-   .about-user_education {
+   .about-user-education {
       text-align: left;
       padding: 0;
    }
 
-   .about-user_article__normal-color {
+   .about-user-article-normal-color {
       text-align: left;
       padding: 0;
    }
-   .about-user_article__orange-color {
+   .about-user-article-orange-color {
       text-align: left;
    }
    .arrow-feedback-left {
@@ -200,23 +200,23 @@
    .about-user {
       max-width: 706px;
    }
-   .user-hub_img__foto {
+   .user-hub-img-foto {
       margin-bottom: 15px;
    }
 
-   .about-user_name {
+   .about-user-name {
       font-size: 30px;
       line-height: calc(37 / 30);
    }
-   .about-user_education {
+   .about-user-education {
       font-size: 14px;
       line-height: calc(17 / 14);
    }
-   .about-user_article__normal-color {
+   .about-user-article-normal-color {
       font-size: 18px;
       line-height: calc(28 / 18);
    }
-   .about-user_article__orange-color {
+   .about-user-article-orange-color {
       font-size: 18px;
       line-height: calc(28 / 18);
    }
