@@ -69,7 +69,7 @@
     .semester-list__item::before {
         content: "";
         position: absolute;
-        top: 8px;
+        top: 0px;
         left: -6px;
         width: 12px;
         height: 12px;
@@ -77,12 +77,14 @@
         border-radius: 50%;
     }
 
-    .semester-list {
+    .semester-list__item:not(:last-child) {
+        padding-bottom: 40px;
         border-left: 1px solid #FFFFFF;
     }
 
-    .semester-list__item:not(:last-child) {
-        margin-bottom: 40px;
+    .semester-list__name {
+        line-height: 1;
+        margin-bottom: 14px;
     }
 }
 
