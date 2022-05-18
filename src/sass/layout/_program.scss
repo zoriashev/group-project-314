@@ -1,14 +1,19 @@
 .section_theme_dark {
-    background-color: $primary-color;
+   background-color: $primary-color;
 }
 
 .section__title_theme_dark {
     margin-bottom: 40px;
     color: $white-color;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 130%;
+   letter-spacing: 0.03em;
+   color: $white-color;
 }
 
 .semester-list__item {
-    position: relative;
+   position: relative;
 }
 
 .semester-list__name {
@@ -52,19 +57,21 @@
             content: "—";
             color: $accent-color;
         }
+
 }
 
 .program-container {
-    position: relative;
+   position: relative;
 }
 
 .program-container::after {
-    content: "";
-    position: absolute;
-    background-size: cover;
+   content: '';
+   position: absolute;
+   background-size: cover;
 }
 
 // 0px - 1679px
+
 @media screen and (max-width: 1679px) {
     .semester-list__item::before {
         content: "";
@@ -90,43 +97,42 @@
 
 // 0px - 767px
 @media screen and (max-width: 767px) {
-    .section_theme_dark {
-        padding-top: 40px;
-        padding-bottom: 604px;
-    }
+   .section_theme_dark {
+      padding-top: 40px;
+      padding-bottom: 604px;
+   }
 
-    .section__title_theme_dark {
-        text-align: center;
-    }
+   .section__title_theme_dark {
+      text-align: center;
+   }
 
-    .semester-list {
-        margin-left: 47px;
-    }
+   .semester-list {
+      margin-left: 47px;
+   }
 
-    .semester-list__item {
-        padding-left: 26px;
-    }
+   .semester-list__item {
+      padding-left: 26px;
+   }
 
-    .program-list__item:not(:last-child) {
-        margin-bottom: 4px;
-    }
+   .program-list__item:not(:last-child) {
+      margin-bottom: 4px;
+   }
 
+   .program-container::after {
+      bottom: -105px;
+      right: 0;
+      height: 137px;
+      width: 150px;
+      background-image: url(../images/program-img-mobile.png);
+   }
 
-    .program-container::after {
-        bottom: -105px;
-        right: 0;
-        height: 137px;
-        width: 150px;
-        background-image: url(../images/program-img-mobile.png);
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .program-container::after {
-            background-image: url(../images/program-img-mobile@2x.png);
-        }
-    }
+   @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .program-container::after {
+         background-image: url(../images/program-img-mobile@2x.png);
+      }
+   }
 }
 
 // 768px +
@@ -171,6 +177,7 @@
             background-image: url(../images/program-img-tablet@2x.png);
         }
     }
+
 }
 
 // 1680px +
@@ -253,94 +260,94 @@
     }
 }
 
-.section-program__item {
-    position: relative;
+.section-program-item {
+   position: relative;
 
-    margin: auto;
-    border: 1px;
-    padding: 0px 15px;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    background-color: #ffffff;
+   margin: auto;
+   border: 1px;
+   padding: 0px 15px;
+   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+   background-color: #ffffff;
 
-    @media screen and (min-width: 320px) {
-        width: 280px;
-        bottom: 310px;
-    }
+   @media screen and (min-width: 320px) {
+      width: 280px;
+      bottom: 310px;
+   }
 
-    @media screen and (min-width: 768px) {
-        width: 704px;
-        bottom: 115px;
-    }
+   @media screen and (min-width: 768px) {
+      width: 704px;
+      bottom: 115px;
+   }
 
-    @media screen and (min-width: 1680px) {
-        width: 1648px;
-        bottom: 200px;
-    }
+   @media screen and (min-width: 1680px) {
+      width: 1648px;
+      bottom: 200px;
+   }
 }
 
-.section-program__title {
-    font-style: normal;
-    letter-spacing: 0.03em;
-    font-family: 'Montserrat';
-    font-weight: 700;
+.section-program-title {
+   font-style: normal;
+   letter-spacing: 0.03em;
+   font-family: 'Montserrat';
+   font-weight: 700;
 
-    color: #111518;
+   color: #111518;
 }
 
 .grid {
-    display: grid;
-    justify-content: space-between;
+   display: grid;
+   justify-content: space-between;
 }
 
-.grid>* {
-    counter-increment: section;
+.grid > * {
+   counter-increment: section;
 }
 
-.section-program__list {
-    @media screen and (min-width: 320px) {
-        padding-bottom: 16px;
-    }
+.section-program-list {
+   @media screen and (min-width: 320px) {
+      padding-bottom: 16px;
+   }
 
-    @media screen and (min-width: 768px) {
-        margin-right: 0px;
-    }
+   @media screen and (min-width: 768px) {
+      margin-right: 0px;
+   }
 }
 
-.section-program__number {
-    color: #ff6b09;
-    padding-bottom: 5px;
+.section-program-number {
+   color: #ff6b09;
+   padding-bottom: 5px;
 }
 
-.section-program__number::after {
-    counter-increment: none;
-    content: '   0' counter(section);
+.section-program-number::after {
+   counter-increment: none;
+   content: '   0' counter(section);
 }
 
 section {
-    counter-reset: section;
+   counter-reset: section;
 }
 
 .grid {
-    @media screen and (min-width: 320px) {
-        padding: 20px 12px 24px 32px;
-        font-size: 14px;
-        line-height: calc(20 / 14);
-    }
+   @media screen and (min-width: 320px) {
+      padding: 20px 12px 24px 32px;
+      font-size: 14px;
+      line-height: calc(20 / 14);
+   }
 
-    @media screen and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(216px, 1fr));
-        grid-gap: 24px;
-        padding: 32px 81px 32px 80px;
-        font-size: 14px;
-        line-height: calc(24 / 14);
-    }
+   @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(216px, 1fr));
+      grid-gap: 24px;
+      padding: 32px 81px 32px 80px;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+   }
 
-    @media screen and (min-width: 1680px) {
-        grid-template-columns: repeat(3, minmax(336px, 1fr));
-        grid-gap: 73px;
-        padding: 55px 191px 104px 141px;
-        font-size: 20px;
-        line-height: calc(28 / 20);
-    }
+   @media screen and (min-width: 1680px) {
+      grid-template-columns: repeat(3, minmax(336px, 1fr));
+      grid-gap: 73px;
+      padding: 55px 191px 104px 141px;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+   }
 }

@@ -64,7 +64,7 @@
 
 // Ira
 
-.section-problems__item {
+.section-problems-item {
    position: relative;
 
    margin: auto;
@@ -85,7 +85,7 @@
       bottom: 215px;
    }
 }
-.section-problems__title {
+.section-problems-title {
    font-style: normal;
    letter-spacing: 0.03em;
    font-family: 'Montserrat';
@@ -100,7 +100,7 @@
 .grid > * {
    counter-increment: section;
 }
-.section-problems__list {
+.section-problems-list {
    @media screen and (min-width: 320px) {
       padding-bottom: 16px;
    }
@@ -110,12 +110,12 @@
    }
 }
 
-.section-problems__number {
+.section-problems-number {
    color: #ff6b09;
    padding-bottom: 5px;
 }
 
-.section-problems__number::after {
+.section-problems-number::after {
    counter-increment: none;
    content: '   0' counter(section);
 }
@@ -143,8 +143,4 @@ section {
       font-size: 20px;
       line-height: calc(28 / 20);
    }
-}
-p {
-   margin: 0px;
-   padding: 0px;
 }
